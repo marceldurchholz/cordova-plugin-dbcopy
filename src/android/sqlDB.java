@@ -59,11 +59,10 @@ public class sqlDB extends CordovaPlugin {
 		final File dbpath;
 		dbname = dbName;
 		JSONObject error = new JSONObject();
-		final DatabaseHelper dbhelper = new DatabaseHelper(this.cordova
-				.getActivity().getApplicationContext());
+		final DatabaseHelper dbhelper = new DatabaseHelper(this.cordova.getActivity().getApplicationContext());
 		dbpath = this.cordova.getActivity().getDatabasePath(dbname);
 		Boolean dbexists = dbpath.exists();
-		//Log.d("CordovaLog", "DatabasePath = " + dbpath + "&&&& dbname = " + dbname + "&&&&DB Exists =" + dbexists);
+		Log.d("CordovaLog", "DatabasePath = " + dbpath + "&&&& dbname = " + dbname + "&&&&DB Exists =" + dbexists);
 
 		if (dbexists) {
 			try {
