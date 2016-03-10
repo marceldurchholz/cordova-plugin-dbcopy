@@ -45,8 +45,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	*/
 
 	private void copyDatabase(File database) throws IOException {
-		dbpath = this.cordova.getActivity().getDatabasePath(dbname);
-
+		// dbpath = this.cordova.getActivity().getDatabasePath(dbname);
 		InputStream myInput = myContext.getAssets().open("www/sql/"+sqlDB.dbname);
 		OutputStream myOutput = new FileOutputStream(database);
 		byte[] buffer = new byte[1024];
