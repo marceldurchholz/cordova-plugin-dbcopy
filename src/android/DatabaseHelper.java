@@ -57,7 +57,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		myInput.close();
 	}
 
-
+	/*
 	private void copyFile(String filename) throws IOException {
 	    AssetManager assetManager = this.getAssets();
 	    InputStream in = null;
@@ -81,7 +81,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	        Log.e("tag", e.getMessage());
 	    }
 	}
-
+	*/
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
